@@ -1,0 +1,28 @@
+{
+  "name": "sense-discord-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ptlc8/sense-discord-bot.git"
+  },
+  "author": "Ambi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ptlc8/sense-discord-bot/issues"
+  },
+  "homepage": "https://github.com/ptlc8/sense-discord-bot#readme",
+  "dependencies": {
+    "@discordjs/builders": "^0.15.0",
+    "@discordjs/rest": "^0.5.0",
+    "discord-api-types": "^0.35.0",
+    "discord.js": "^13.8.1",
+    "dotenv": "^16.0.1",
+    "smashmeme": "github:ptlc8/smashmeme"
+  }
+}
