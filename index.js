@@ -14,12 +14,12 @@ if (!process.env.DISCORD_BOT_TOKEN) {
 // Récupération de la sauvegarde
 var saveFile = process.env.SAVE_FILE;
 var data = {
-    guilds: []
+    guilds: {}
 };
-if (fs.statSync(saveFile)) {
+try {
     data = JSON.parse(fs.readFileSync(saveFile));
     console.info("Loaded save from "+saveFile);    
-}
+} catch (e) {}
 
 // Fonction de sauvegarde
 function save() {
@@ -65,8 +65,9 @@ client.on("ready", () => {
     for (let guild of client.guilds.cache) {
         publishCommands(client.user.id, guild[1]);
         if (!data.guilds[guild[1].id])
-        data.guilds[guild[1].id] = {tweetsChannelId:null, tweetsEmoji:"🐦", tweetsEmojiCount:10};
+            data.guilds[guild[1].id] = {tweetsChannelId:null, tweetsEmoji:"🐦", tweetsEmojiCount:10};
     }
+    save();
 });
 
 // Création du client Twitter et test de connexion
