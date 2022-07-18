@@ -23,7 +23,6 @@
     "discord-api-types": "^0.35.0",
     "discord.js": "^13.8.1",
     "dotenv": "^16.0.1",
-    "smashmeme": "github:ptlc8/smashmeme",
     "twitter-api-v2": "^1.12.3"
   }
 }
