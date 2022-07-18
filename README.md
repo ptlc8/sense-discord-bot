@@ -20,3 +20,7 @@ Everyone who can react message can vote for tweeting a message.
 - /tweetschannel <channel>: set the channel where tweets submit can be voted
 - /tweetsemoji <emoji>: set the emoji for voting
 - /tweetsemojicount <count>: set the number of emoji vote for publishing
+
+## Credits
+
+- [Ambi](https://github.com/ptlc8)
